@@ -83,6 +83,7 @@ const callbackFuncs = new Map([
 exports.evm2wasm = function (evmCode, opts = {
   'stackTrace': false,
   'inlineOps': true,
+  'wabt': false,
   'testName': 'temp'
 }) {
   const wast = exports.evm2wast(evmCode, opts)
